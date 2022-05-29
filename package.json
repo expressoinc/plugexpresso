@@ -1,0 +1,32 @@
+{
+  "name": "plugexpresso",
+  "version": "0.1.0",
+  "description": "PlugExpresso is package that tokenizes incentives like food and many more... Plug Expresso",
+  "types": "lib/index.d.ts",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "tsc && node lib/index.js",
+    "build": "tsc",
+    "pre": "rm ./lib/* && tsc && npm version patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/expressoinc/plugexpresso.git"
+  },
+  "keywords": ["expresso", "plug", "plug expresso", "plugexpresso", "food tokens", "vendors", "tokens"],
+  "author": "Jeremiah Nwaeze",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "bugs": {
+    "url": "https://github.com/expressoinc/plugexpresso/issues"
+  },
+  "homepage": "https://github.com/expressoinc/plugexpresso#readme", 
+  "devDependencies": {
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.9.0",
+    "tslint-react": "^3.5.1",
+    "typescript": "^2.7.2"
+  }
+}
