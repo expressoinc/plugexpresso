@@ -13,7 +13,15 @@
     "type": "git",
     "url": "git+https://github.com/expressoinc/plugexpresso.git"
   },
-  "keywords": ["expresso", "plug", "plug expresso", "plugexpresso", "food tokens", "vendors", "tokens"],
+  "keywords": [
+    "expresso",
+    "plug",
+    "plug expresso",
+    "plugexpresso",
+    "food tokens",
+    "vendors",
+    "tokens"
+  ],
   "author": "Jeremiah Nwaeze",
   "license": "MIT",
   "files": [
@@ -22,11 +30,14 @@
   "bugs": {
     "url": "https://github.com/expressoinc/plugexpresso/issues"
   },
-  "homepage": "https://github.com/expressoinc/plugexpresso#readme", 
+  "homepage": "https://github.com/expressoinc/plugexpresso#readme",
   "devDependencies": {
     "tslint": "^5.9.1",
     "tslint-config-prettier": "^1.9.0",
     "tslint-react": "^3.5.1",
     "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "axios": "^0.22.0"
   }
 }

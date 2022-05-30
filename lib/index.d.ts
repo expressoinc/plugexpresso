@@ -1,5 +1,8 @@
+import { VerifyDto } from "./types";
 declare class PlugExpresso {
-    [x: string]: string;
+    sk: string;
     constructor(sk: string);
+    verify(args: VerifyDto): Promise<any>;
+    getPayoutList(): Promise<void>;
 }
 export default PlugExpresso;
