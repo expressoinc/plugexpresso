@@ -8,7 +8,7 @@ export const postAction = async (url: string, payload = {}) => {
         return data?.data;
     } catch (err) {
         new Error('Request [POST]: failed to complete.');
-        return { status: "error", message: (err as any).response.data };
+        return { status: "error", message: (err as any).response && (err as any).response.data ? (err as any).response.data.message : "Request [POST]: failed to complete." };
     }
 }
 
@@ -18,6 +18,6 @@ export const getAction = async (url: string) => {
         return data?.data;
     } catch (err) {
         new Error('Request [GET]: failed to complete.');
-        return { status: "error", message: (err as any).response.data };
+        return { status: "error", message: (err as any).response && (err as any).response.data ? (err as any).response.data.message : "Request [GET]: failed to complete." };
     }
 }
