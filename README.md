@@ -1,8 +1,9 @@
 # PlugExpresso
 
 <p>
-<img title="PlugExpresso" src="https://expresso-api.s3.amazonaws.com/emailLogo.png"/>
+<img title="PlugExpresso" src="https://i.postimg.cc/Pqc8FTdP/email-Logo-1.png" />
 </p>
+
 # PlugExpresso v1 SDK
 
 ### How to use
