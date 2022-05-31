@@ -66,7 +66,7 @@ const verify_token = async () => {
       email: <EMAIL_ASSOCIATED_TO_TOKEN>,
       token: <EXPRESSO_FOOD_TOKEN>,
       exact_amount: 1000,
-      currency: 'ngn'
+      exact_currency: 'ngn'
     };
 
     const response = await expresso.verify(payload);
@@ -100,6 +100,34 @@ const get_transaction_list = async () => {
 };
 ```
 
+# Using the Public REST API
+
+```javascript
+const verify_token = async () => {
+  try {
+    const config = {
+      headers: {
+        "content-type": "application/json",
+        "authorization": `Bearer ${PLUGEXPRESSO_SECRET_KEY}`,
+      }
+    };
+    
+    const payload = {
+      email: <EMAIL_ASSOCIATED_TO_TOKEN>,
+      token: <EXPRESSO_FOOD_TOKEN>,
+    };
+    
+    const response = await axios.post(`${EXPRESSO_BASE_URL}/transaction/verify`, payload, config);
+    
+    console.log(response);
+    
+  } catch (error) {
+    console.log(error);
+  }
+};
+```
 
 MUCH MORE SOON...
 Tokenizing Incentives like. food and much more.
+
+
