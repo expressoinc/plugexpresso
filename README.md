@@ -4,7 +4,7 @@
 <img title="PlugExpresso" src="https://i.postimg.cc/Pqc8FTdP/email-Logo-1.png" />
 </p>
 
-# PlugExpresso v1 SDK
+# PlugExpresso v0.1.0 SDK
 
 ### How to use
 
@@ -40,8 +40,8 @@ const expresso = new PlugExpresso(PLUGEXPRESSO_SECRET_KEY);
 const verify_token = async () => {
   try {
     const payload = {
-      email: <EMAIL_ASSOCIATED_TO_TOKEN>,
-      token: <EXPRESSO_FOOD_TOKEN>
+      "email": <EMAIL_ASSOCIATED_TO_TOKEN>,
+      "token": <EXPRESSO_FOOD_TOKEN>
     };
 
     const response = await expresso.verify(payload);
@@ -63,10 +63,10 @@ const expresso = new PlugExpresso(PLUGEXPRESSO_SECRET_KEY);
 const verify_token = async () => {
   try {
     const payload = {
-      email: <EMAIL_ASSOCIATED_TO_TOKEN>,
-      token: <EXPRESSO_FOOD_TOKEN>,
-      exact_amount: 1000,
-      exact_currency: 'ngn'
+      "email": <EMAIL_ASSOCIATED_TO_TOKEN>,
+      "token": <EXPRESSO_FOOD_TOKEN>
+      "exact_amount": 1000,
+      "exact_currency": 'ngn'
     };
 
     const response = await expresso.verify(payload);
@@ -113,8 +113,8 @@ const verify_token = async () => {
     };
     
     const payload = {
-      email: <EMAIL_ASSOCIATED_TO_TOKEN>,
-      token: <EXPRESSO_FOOD_TOKEN>,
+      "email": <EMAIL_ASSOCIATED_TO_TOKEN>,
+      "token": <EXPRESSO_FOOD_TOKEN>
     };
     
     const response = await axios.post(`${EXPRESSO_BASE_URL}/transaction/verify`, payload, config);
