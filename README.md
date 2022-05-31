@@ -128,6 +128,6 @@ const verify_token = async () => {
 ```
 
 MUCH MORE SOON...
-Tokenizing Incentives like. food and much more.
+Tokenizing Incentives like food and much more.
 
 
