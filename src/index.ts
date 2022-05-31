@@ -3,7 +3,6 @@ import { VerifyDto } from "./types";
 import * as Expresso from "./utils/api";
 import * as api from "./utils/api/constants";
 
-
 class PlugExpresso {
     sk: string;
     constructor(sk: string) {
