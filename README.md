@@ -1,7 +1,7 @@
 # PlugExpresso
 
 <p>
-<img title="PlugExpresso" src= "https://expresso-api.s3.amazonaws.com/emailLogo.png"/>
+<img title="PlugExpresso" src="https://expresso-api.s3.amazonaws.com/emailLogo.png"/>
 </p>
 # PlugExpresso v1 SDK
 
