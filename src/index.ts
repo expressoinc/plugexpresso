@@ -1,5 +1,5 @@
 import { setSk } from "./utils/api/axios-order";
-import { VerifyDto } from "./types";
+import { ResponseData, VerifyDto } from "./types";
 import * as Expresso from "./utils/api";
 import * as api from "./utils/api/constants";
 
@@ -9,12 +9,12 @@ class PlugExpresso {
         this.sk = sk;
     }
 
-    async verify (args: VerifyDto): Promise<any> {
+    async verify (args: VerifyDto): Promise<ResponseData> {
         await setSk(this.sk);
         return await Expresso.postAction(api.BASE_URL_VERIFY, args);
     }
 
-    async getPayoutList (): Promise<void> {
+    async getPayoutList (): Promise<ResponseData> {
         await setSk(this.sk);
         return await Expresso.getAction(api.BASE_URL_TRANSACTION_LIST);
     }

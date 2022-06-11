@@ -8,3 +8,9 @@ export interface VerifyDto {
     exact_amount?: number;
     exact_currency?: string;
 }
+
+export interface ResponseData {
+    status: 'success' | 'error';
+    message?: string;
+    data?: Array<{ [key: string]: string }> | { [key: string]: string };
+}
